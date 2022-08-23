@@ -1,0 +1,15 @@
+const nemo=['nemo'];
+const peces = ['dori','peter','jhon','ana','david','nemo'];
+const oceano = new Array(10).fill('beto');
+function findingNemo(arr){
+  let t0 = performance.now();
+  
+  for(let i =0; i<arr.length;i++){
+    if (arr[i] === 'nemo') console.log('FOUND NEMO!');
+  }
+  let t1 = performance.now();
+  
+  console.log(`tiempo de ejecucion: ${t1 - t0} milisegundos`)
+}
+findingNemo(oceano);
+console.log(oceano);
