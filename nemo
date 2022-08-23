@@ -1,6 +1,6 @@
 const nemo=['nemo'];
-const peces = ['dori','peter','jhon','ana','david','nemo'];
-const oceano = new Array(10).fill('beto');
+const fishes = ['dori','peter','john','ana','david','nemo'];
+const ocean = new Array(10).fill('boris');
 function findingNemo(arr){
   let t0 = performance.now();
   
@@ -9,7 +9,7 @@ function findingNemo(arr){
   }
   let t1 = performance.now();
   
-  console.log(`tiempo de ejecucion: ${t1 - t0} milisegundos`)
+  console.log(`execution time: ${t1 - t0} milliseconds`)
 }
-findingNemo(oceano);
-console.log(oceano);
+findingNemo(ocean);
+console.log(ocean);
